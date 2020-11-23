@@ -1,0 +1,15 @@
+v1: COMET-128_AES-128/128
+
+    Reference software:    
+        comet128aesv1
+        
+    Architecture description:
+        Implementation of COMET-AES, with b=128, n=128, and t=128. Basic iterative architecture where 1 round of the AES round function is executed in 1 clock cycle.
+
+    Key setup time:
+        0
+        
+    Execution time of authenticated encryption:
+        22 + (Na*15) + (Nm*19) + 15
+    Execution time of authenticated decryption:
+        15 + (Na*15) + (Nc*19) + 16
